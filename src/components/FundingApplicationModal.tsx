@@ -51,107 +51,112 @@ const FundingApplicationModal = ({ isOpen, onClose }: FundingApplicationModalPro
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-gray-900 border-gray-700">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">
+          <DialogTitle className="text-2xl font-bold text-white">
             Funding Application
           </DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
           <div>
-            <Label htmlFor="fundingProgram">Funding Program</Label>
+            <Label htmlFor="fundingProgram" className="text-orange-400">Funding Program</Label>
             <Select value={formData.fundingProgram} onValueChange={(value) => handleInputChange('fundingProgram', value)}>
-              <SelectTrigger>
+              <SelectTrigger className="bg-gray-800 border-gray-600 text-white">
                 <SelectValue placeholder="Select a funding program" />
               </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="alumni-seed">Alumni Seed Fund ($10K - $50K)</SelectItem>
-                <SelectItem value="growth-accelerator">Growth Accelerator ($50K - $200K)</SelectItem>
-                <SelectItem value="innovation-grant">Innovation Grant ($5K - $25K)</SelectItem>
+              <SelectContent className="bg-gray-800 border-gray-600">
+                <SelectItem value="alumni-seed" className="text-white hover:bg-gray-700">Alumni Seed Fund ($10K - $50K)</SelectItem>
+                <SelectItem value="growth-accelerator" className="text-white hover:bg-gray-700">Growth Accelerator ($50K - $200K)</SelectItem>
+                <SelectItem value="innovation-grant" className="text-white hover:bg-gray-700">Innovation Grant ($5K - $25K)</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           <div>
-            <Label htmlFor="requestedAmount">Requested Amount</Label>
+            <Label htmlFor="requestedAmount" className="text-orange-400">Requested Amount</Label>
             <Input
               id="requestedAmount"
               type="number"
               value={formData.requestedAmount}
               onChange={(e) => handleInputChange('requestedAmount', e.target.value)}
               placeholder="Enter the amount you're requesting"
+              className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400"
             />
           </div>
 
           <div>
-            <Label htmlFor="businessStage">Current Business Stage</Label>
+            <Label htmlFor="businessStage" className="text-orange-400">Current Business Stage</Label>
             <Select value={formData.businessStage} onValueChange={(value) => handleInputChange('businessStage', value)}>
-              <SelectTrigger>
+              <SelectTrigger className="bg-gray-800 border-gray-600 text-white">
                 <SelectValue placeholder="Select your business stage" />
               </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="idea">Idea Stage</SelectItem>
-                <SelectItem value="prototype">Prototype/MVP</SelectItem>
-                <SelectItem value="early-revenue">Early Revenue</SelectItem>
-                <SelectItem value="growth">Growth Stage</SelectItem>
-                <SelectItem value="scale">Scale Stage</SelectItem>
+              <SelectContent className="bg-gray-800 border-gray-600">
+                <SelectItem value="idea" className="text-white hover:bg-gray-700">Idea Stage</SelectItem>
+                <SelectItem value="prototype" className="text-white hover:bg-gray-700">Prototype/MVP</SelectItem>
+                <SelectItem value="early-revenue" className="text-white hover:bg-gray-700">Early Revenue</SelectItem>
+                <SelectItem value="growth" className="text-white hover:bg-gray-700">Growth Stage</SelectItem>
+                <SelectItem value="scale" className="text-white hover:bg-gray-700">Scale Stage</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           <div>
-            <Label htmlFor="useOfFunds">Use of Funds</Label>
+            <Label htmlFor="useOfFunds" className="text-orange-400">Use of Funds</Label>
             <Textarea
               id="useOfFunds"
               value={formData.useOfFunds}
               onChange={(e) => handleInputChange('useOfFunds', e.target.value)}
               placeholder="Describe how you plan to use the funding"
               rows={3}
+              className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400"
             />
           </div>
 
           <div>
-            <Label htmlFor="businessPlan">Business Plan Summary</Label>
+            <Label htmlFor="businessPlan" className="text-orange-400">Business Plan Summary</Label>
             <Textarea
               id="businessPlan"
               value={formData.businessPlan}
               onChange={(e) => handleInputChange('businessPlan', e.target.value)}
               placeholder="Provide a brief summary of your business plan"
               rows={4}
+              className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400"
             />
           </div>
 
           <div>
-            <Label htmlFor="marketAnalysis">Market Analysis</Label>
+            <Label htmlFor="marketAnalysis" className="text-orange-400">Market Analysis</Label>
             <Textarea
               id="marketAnalysis"
               value={formData.marketAnalysis}
               onChange={(e) => handleInputChange('marketAnalysis', e.target.value)}
               placeholder="Describe your target market and competitive landscape"
               rows={3}
+              className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400"
             />
           </div>
 
           <div>
-            <Label htmlFor="financialProjections">Financial Projections</Label>
+            <Label htmlFor="financialProjections" className="text-orange-400">Financial Projections</Label>
             <Textarea
               id="financialProjections"
               value={formData.financialProjections}
               onChange={(e) => handleInputChange('financialProjections', e.target.value)}
               placeholder="Provide your financial projections for the next 2-3 years"
               rows={3}
+              className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400"
             />
           </div>
 
           <div className="flex justify-end gap-3">
-            <Button variant="outline" onClick={onClose}>
+            <Button variant="outline" onClick={onClose} className="border-gray-600 text-gray-300 hover:bg-gray-800">
               Cancel
             </Button>
             <Button 
               onClick={handleSubmit}
               disabled={!formData.fundingProgram || !formData.requestedAmount || !formData.businessStage}
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-purple-600 hover:bg-purple-700 text-white"
             >
               Submit Application
             </Button>

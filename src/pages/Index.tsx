@@ -78,24 +78,24 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-900">
       <Header onSignUp={() => setShowAuthModal(true)} onLogin={handleLogin} />
       
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
             Connect. Fund. Grow.
-            <span className="block text-blue-600">Your Alumni Network</span>
+            <span className="block text-orange-400">Your Alumni Network</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
             Join Alum Spark Ventures - the premier platform where learners and alumni 
             start businesses, access funding, and collaborate with peers to build the future.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
+              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg"
               onClick={() => setShowAuthModal(true)}
             >
               Start Your Journey
@@ -103,7 +103,7 @@ const Index = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+              className="border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-black px-8 py-3 text-lg"
               onClick={handleLogin}
             >
               Explore Platform
@@ -115,55 +115,55 @@ const Index = () => {
       {/* Features Section */}
       <section className="container mx-auto px-6 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Everything You Need to Succeed
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Whether you're starting a business or offering your skills, 
             our platform provides the tools and connections you need.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-800 border-gray-700">
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Briefcase className="h-8 w-8 text-blue-600" />
+              <div className="w-16 h-16 bg-orange-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Briefcase className="h-8 w-8 text-black" />
               </div>
-              <CardTitle className="text-xl text-gray-900">Start Your Business</CardTitle>
+              <CardTitle className="text-xl text-white">Start Your Business</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-center text-gray-600 leading-relaxed">
+              <CardDescription className="text-center text-gray-300 leading-relaxed">
                 Register as a business owner, showcase your venture, and connect with 
                 potential employees and funding opportunities.
               </CardDescription>
             </CardContent>
           </Card>
 
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-800 border-gray-700">
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-green-600" />
+              <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-white" />
               </div>
-              <CardTitle className="text-xl text-gray-900">Offer Your Skills</CardTitle>
+              <CardTitle className="text-xl text-white">Offer Your Skills</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-center text-gray-600 leading-relaxed">
+              <CardDescription className="text-center text-gray-300 leading-relaxed">
                 Join as a service provider, showcase your expertise, and apply to 
                 exciting opportunities with alumni-founded businesses.
               </CardDescription>
             </CardContent>
           </Card>
 
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-800 border-gray-700">
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Search className="h-8 w-8 text-purple-600" />
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Search className="h-8 w-8 text-white" />
               </div>
-              <CardTitle className="text-xl text-gray-900">Access Funding</CardTitle>
+              <CardTitle className="text-xl text-white">Access Funding</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-center text-gray-600 leading-relaxed">
+              <CardDescription className="text-center text-gray-300 leading-relaxed">
                 Apply for funding opportunities and connect with investors who 
                 believe in supporting alumni entrepreneurship.
               </CardDescription>
@@ -173,48 +173,48 @@ const Index = () => {
       </section>
 
       {/* Business Showcase */}
-      <section className="bg-white py-16">
+      <section className="bg-gray-900 py-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               Featured Alumni Businesses
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Discover innovative companies started by our community
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {businesses.map((business) => (
-              <Card key={business.id} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={business.id} className="hover:shadow-lg transition-shadow duration-300 bg-gray-800 border-gray-700">
                 <CardHeader>
                   <div className="flex justify-between items-start">
-                    <CardTitle className="text-lg text-gray-900">{business.name}</CardTitle>
-                    <Badge variant="secondary" className="bg-blue-100 text-blue-700">
+                    <CardTitle className="text-lg text-white">{business.name}</CardTitle>
+                    <Badge variant="secondary" className="bg-purple-600 text-white">
                       {business.funding_stage}
                     </Badge>
                   </div>
-                  <CardDescription className="text-sm text-gray-500">
+                  <CardDescription className="text-sm text-orange-400">
                     Founded by {business.owner}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">{business.description}</p>
+                  <p className="text-gray-300 mb-4">{business.description}</p>
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Category:</span>
-                      <span className="font-medium">{business.category}</span>
+                      <span className="text-gray-400">Category:</span>
+                      <span className="font-medium text-white">{business.category}</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Team Size:</span>
-                      <span className="font-medium">{business.employees} people</span>
+                      <span className="text-gray-400">Team Size:</span>
+                      <span className="font-medium text-white">{business.employees} people</span>
                     </div>
                   </div>
                   <div className="mt-4">
-                    <p className="text-sm text-gray-500 mb-2">Looking for:</p>
+                    <p className="text-sm text-gray-400 mb-2">Looking for:</p>
                     <div className="flex flex-wrap gap-1">
                       {business.services_needed.map((service) => (
-                        <Badge key={service} variant="outline" className="text-xs">
+                        <Badge key={service} variant="outline" className="text-xs border-orange-400 text-orange-400">
                           {service}
                         </Badge>
                       ))}
