@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -89,7 +88,7 @@ const Index = () => {
             <span className="block text-orange-400">Your Alumni Network</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Join Alum Spark Ventures - the premier platform where learners and alumni 
+            Join Umuzi - the premier platform where learners and alumni 
             start businesses, access funding, and collaborate with peers to build the future.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
