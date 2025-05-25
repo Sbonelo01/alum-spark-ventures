@@ -78,7 +78,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-900">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-orange-900">
       <Header onSignUp={() => setShowAuthModal(true)} onLogin={handleLogin} />
       
       {/* Hero Section */}
@@ -95,7 +95,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg"
               onClick={() => setShowAuthModal(true)}
             >
               Start Your Journey
@@ -142,7 +142,7 @@ const Index = () => {
 
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-800 border-gray-700">
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
               <CardTitle className="text-xl text-white">Offer Your Skills</CardTitle>
@@ -157,7 +157,7 @@ const Index = () => {
 
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-gray-800 border-gray-700">
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Search className="h-8 w-8 text-white" />
               </div>
               <CardTitle className="text-xl text-white">Access Funding</CardTitle>
@@ -190,7 +190,7 @@ const Index = () => {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <CardTitle className="text-lg text-white">{business.name}</CardTitle>
-                    <Badge variant="secondary" className="bg-purple-600 text-white">
+                    <Badge variant="secondary" className="bg-orange-500 text-white">
                       {business.funding_stage}
                     </Badge>
                   </div>

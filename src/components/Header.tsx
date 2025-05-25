@@ -15,7 +15,7 @@ const Header = ({ user, onSignUp, onLogin, onLogout }: HeaderProps) => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
               <Users className="h-6 w-6 text-white" />
             </div>
             <div>
@@ -42,7 +42,7 @@ const Header = ({ user, onSignUp, onLogin, onLogout }: HeaderProps) => {
                 <Button variant="ghost" onClick={onLogin} className="text-orange-400 hover:bg-orange-400 hover:text-black">
                   Login
                 </Button>
-                <Button onClick={onSignUp} className="bg-purple-600 hover:bg-purple-700 text-white">
+                <Button onClick={onSignUp} className="bg-orange-500 hover:bg-orange-600 text-white">
                   Join Now
                 </Button>
               </div>

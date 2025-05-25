@@ -156,7 +156,7 @@ const FundingApplicationModal = ({ isOpen, onClose }: FundingApplicationModalPro
             <Button 
               onClick={handleSubmit}
               disabled={!formData.fundingProgram || !formData.requestedAmount || !formData.businessStage}
-              className="bg-purple-600 hover:bg-purple-700 text-white"
+              className="bg-orange-500 hover:bg-orange-600 text-white"
             >
               Submit Application
             </Button>
