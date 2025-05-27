@@ -70,14 +70,14 @@ const AuthModal = ({ isOpen, onClose, onSignUp }: AuthModalProps) => {
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-center">
-            Join Alum Spark Ventures
+            Join Umuzi StartUp
           </DialogTitle>
         </DialogHeader>
 
         {step === 1 && (
           <div className="space-y-6">
             <p className="text-center text-gray-600">
-              Choose how you want to participate in our alumni network
+              Choose how you want to participate in our startup network
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
