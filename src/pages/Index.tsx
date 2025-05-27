@@ -15,7 +15,7 @@ const Index = () => {
     {
       id: 1,
       name: "TechStart Solutions",
-      owner: "Sarah Johnson",
+      owner: "Tsepo Mbatha",
       description: "AI-powered business automation platform",
       category: "Technology",
       services_needed: ["Frontend Developer", "Digital Marketing"],
@@ -25,7 +25,7 @@ const Index = () => {
     {
       id: 2,
       name: "EcoGreen Consulting",
-      owner: "Michael Chen",
+      owner: "Senzo Mchunu",
       description: "Sustainable business consulting for small enterprises",
       category: "Consulting",
       services_needed: ["Business Analyst", "Content Writer"],
@@ -35,7 +35,7 @@ const Index = () => {
     {
       id: 3,
       name: "DesignCraft Studio",
-      owner: "Emma Rodriguez",
+      owner: "Emma Smith",
       description: "Creative design agency specializing in brand identity",
       category: "Design",
       services_needed: ["UX Designer", "Project Manager"],

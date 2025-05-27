@@ -20,7 +20,7 @@ const Header = ({ user, onSignUp, onLogin, onLogout }: HeaderProps) => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">Umuzi</h1>
-              <p className="text-xs text-orange-400">Alumni Business Network</p>
+              <p className="text-xs text-orange-400">StartUp</p>
             </div>
           </div>
 
