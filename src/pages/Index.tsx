@@ -85,7 +85,7 @@ const Index = () => {
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
             Connect. Fund. Grow.
-            <span className="block text-orange-400">Your Alumni Network</span>
+            <span className="block text-orange-400">Your LearnerPreneurship Journey</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
             Join Umuzi - the premier platform where learners and alumni 
