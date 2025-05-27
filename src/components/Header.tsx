@@ -17,7 +17,7 @@ const Header = ({ user, onSignUp, onLogin, onLogout }: HeaderProps) => {
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
               {/* <Users className="h-6 w-6 text-white" /> */}
-              <img src="../public/umuzi-logo.png" alt="logo" className="h-6 w-6 text-white" />
+              <img src="../../public/umuzi-logo.png" alt="logo" className="h-6 w-6 text-white" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">Umuzi</h1>
